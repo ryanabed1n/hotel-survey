@@ -1,0 +1,1 @@
+I somehow lost my previous github account and I'm uploading my old projects to this other account (This might become my main). Anyway please don't judge as these are from my early days of learning html! :)
