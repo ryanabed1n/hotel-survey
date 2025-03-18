@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">
+            Thank you for taking the time to help us improve our services.
+        </p>
+    </header>
+    <main>
+        <form action="" id="survey-form">
+            <fieldset>
+                <legend>
+                    Personal Information
+                </legend>
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                <label for="number" id="number-label">Number:</label>
+                <input type="number" id="number" name="number" placeholder="Enter your phone number" min="10" max="12" required>
+            </fieldset>
+            <fieldset>
+                <label for="ratings"> How often do our ads popup on your feed?</label>
+                <select name="ratings" id="dropdown">
+                    <option value="rarely">Rarely</option>
+                    <option value="sometimes">Sometimes</option>
+                    <option value="often" selected>Often</option>
+                </select>            
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Where did you hear about us?
+                </legend>
+                <label for="youtube">Youtube</label>
+                <input type="radio" id="youtube" name="where" value="youtube">
+                <label for="facebook">Facebook</label>
+                <input type="radio" id="facebook" name="where" value="facebook">
+                <label for="from-a-friend">From a friend</label>
+                <input type="radio" id="from-a-friend" name="where" value="from-a-friend">
+                <label for="other">Other</label>
+                <input type="radio" id="other" name="where" value="other">
+            </fieldset>
+            <fieldset>
+                <legend>Who would you recommend our services to?</legend>
+                <label for="family">Family</label>
+                <input type="checkbox" id="family" name="recommend" value="family">
+                <label for="friends">Friends</label>
+                <input type="checkbox" id="friends" name="recommend" value="friends">
+                <label for="coworkers">Coworkers</label>
+                <input type="checkbox" id="coworkers" name="recommend" value="coworkers">
+                <label for="other">Other</label>
+                <input type="checkbox" id="other" name="recommend" value="other">
+            </fieldset>
+            <fieldset>
+                <legend>Do you have anything you would like to let us know?</legend>
+                <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comments here"></textarea>
+            </fieldset>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>All rights reserved by King Tamim &copy;</p>
+    </footer>
+  </body>
+</html>
